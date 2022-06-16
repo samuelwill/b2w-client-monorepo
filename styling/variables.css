@@ -1,0 +1,9 @@
+:host {
+    /* Font styles */
+    --text-color-standard: black;
+
+    /* Padding styles */
+    --padding-small: 0.5rem;
+    --padding-standard: 1rem;
+    --padding-large: 1.5rem
+}
