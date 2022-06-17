@@ -5,3 +5,4 @@
 export * from './lib/core-components.service';
 export * from './lib/core-components.component';
 export * from './lib/core-components.module';
+export * from './lib/datepicker/datepicker.component';

@@ -7,6 +7,11 @@
       "projectType": "library",
       "root": "projects/core-components",
       "sourceRoot": "projects/core-components/src",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "prefix": "lib",
       "architect": {
         "build": {
@@ -17,6 +22,9 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/core-components/tsconfig.lib.prod.json"
+            },
+            "ivy": {
+              "tsConfig": "projects/core-components/tsconfig.lib.ivy.json"
             },
             "development": {
               "tsConfig": "projects/core-components/tsconfig.lib.json"
