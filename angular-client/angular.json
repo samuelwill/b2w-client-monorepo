@@ -23,9 +23,6 @@
             "production": {
               "tsConfig": "projects/core-components/tsconfig.lib.prod.json"
             },
-            "ivy": {
-              "tsConfig": "projects/core-components/tsconfig.lib.ivy.json"
-            },
             "development": {
               "tsConfig": "projects/core-components/tsconfig.lib.json"
             }
