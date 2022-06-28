@@ -1,1 +1,7 @@
-@import "~@progress/kendo-theme-default/scss/datepicker";
+kendo-datepicker {
+  border: var(--border-standard);
+}
+
+::ng-deep .k-button-solid-base {
+  background-color: cyan;
+}

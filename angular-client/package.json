@@ -10,12 +10,12 @@
     "build:corecomponents": "ng build core-components"
   },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.8",
     "@angular/cdk": "13.3",
     "@angular/cli": "~13.3.4",
     "@angular/compiler-cli": "~13.3.0",
+    "@progress/kendo-theme-default": "^5.5.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
