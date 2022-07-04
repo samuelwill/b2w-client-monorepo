@@ -1,0 +1,6 @@
+<div class="Container">
+  <div *ngFor="let button of buttons"
+       (click)="selectedButton.emit(button)">
+    {{button.text}}
+  </div>
+</div>
