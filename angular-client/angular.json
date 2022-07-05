@@ -20,7 +20,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/core-components/ng-package.json"
+            "project": "projects/core-components/ng-package.json",
+            "styles": [
+              "../b2w-styling-base/_index.scss",
+              "./projects/core-components/_index.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -43,5 +47,21 @@
       }
     }
   },
-  "defaultProject": "core-components"
+  "defaultProject": "core-components",
+  "storybook": {
+    "builder": "@storybook/angular:start-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build",
+      "port": 6006,
+      "styles": [
+        "./projects/core-components/_index.scss"
+      ]
+    }
+  },
+  "build-storybook": {
+    "builder": "@storybook/angular:build-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build"
+    }
+  }
 }

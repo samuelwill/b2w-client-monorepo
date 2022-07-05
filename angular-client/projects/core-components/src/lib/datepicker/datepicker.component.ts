@@ -9,7 +9,13 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output
 export class DatepickerComponent implements OnInit {
 
   @Input()
-  public dateValue!: Date;
+  public dateValue = new Date();
+
+  @Input()
+  public disabled = false;
+
+  @Input()
+  public disabledDates = (date: Date) => false;
 
   @Output()
   public dateChanged = new EventEmitter<Date>();

@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/angular';
-import Button from '../projects/core-components/src/lib/button-group/button';
-import { ButtonGroupComponent } from '../projects/core-components/src/lib/button-group/button-group.component';
+import Button from './button';
+import { ButtonGroupComponent } from './button-group.component';
 
 
 export default {
@@ -13,7 +13,7 @@ const Template: Story = (args) => ({
 });
 
 export const FirstStory = Template.bind({});
-FirstStory.storyName = 'Simple Version';
+FirstStory.storyName = 'Basic';
 FirstStory.args = {
   buttons: [
     new Button('On-Site', 1),
