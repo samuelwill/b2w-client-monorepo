@@ -4,7 +4,7 @@
     "injectables": [
         {
             "name": "CoreComponentsService",
-            "id": "injectable-CoreComponentsService-2dbdab1e27537cfb35770f76ba0c7903249184d14216e46be85f802d5d1d2afd21f7598162e400dbc04c1c6486d2cc4831c58552b1b768a53b8ca205093d1f9d",
+            "id": "injectable-CoreComponentsService-12dab353708b157f5254b9d0eee9f70e5d84022d9baa77a9d54c166e7bb521de4c0cfb0e03c8ea58c9d59760f7fd0e110eaf09cfea1db75b32aef32a54d6a2b2",
             "file": "projects/core-components/src/lib/core-components.service.ts",
             "properties": [],
             "methods": [],
@@ -12,7 +12,7 @@
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class CoreComponentsService {\n\n  constructor() { }\n}\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class CoreComponentsService {\r\n\r\n  constructor() { }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -29,12 +29,12 @@
     "classes": [
         {
             "name": "Button",
-            "id": "class-Button-9b4236b53cfa791d9723ac05aabf596712d94765e9cd14a75d3881c8360cc11f27afef577dab855ddb149345f134f9851a7fb98b0c33477ab025e5867a35b9ae",
+            "id": "class-Button-5a05d903970d69794e28d019e1a677d204099aee7060a74323c1aa6bc1b9a6aa0a080604ac970d4348de147357e91326edd80b08b7683a40fde406c7aca32bb5",
             "file": "projects/core-components/src/lib/button-group/button.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "export default class Button {\n  constructor(\n    public text: string,\n    public id: number\n  ) {\n\n  }\n}\n",
+            "sourceCode": "export default class Button {\r\n  constructor(\r\n    public text: string,\r\n    public id: number\r\n  ) {\r\n\r\n  }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -114,7 +114,7 @@
     "components": [
         {
             "name": "ButtonGroupComponent",
-            "id": "component-ButtonGroupComponent-d66453af52b68aababaec60b698baf48505a5fbc42c47abe3c877f00e00ca835ea799440d37c640b009b275c147a1857c9f9fd6cb90922ce25a98a3ee507601b",
+            "id": "component-ButtonGroupComponent-e2011cb09244dae328082d6b90bce8f03b3d874446f8401f5314ee38a4029875dd882987fff3271b42ef1e1fd1678e9d2602f9caf54fc050e5d309d17399d166",
             "file": "projects/core-components/src/lib/button-group/button-group.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -172,11 +172,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport Button from './button';\n\n@Component({\n  selector: 'lib-button-group',\n  templateUrl: './button-group.component.html',\n  styleUrls: ['./button-group.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonGroupComponent implements OnInit {\n\n  @Input()\n  public buttons: Button[] = [];\n\n  @Output()\n  public selectedButton = new EventEmitter<Button>();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n\n",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\r\nimport Button from './button';\r\n\r\n@Component({\r\n  selector: 'lib-button-group',\r\n  templateUrl: './button-group.component.html',\r\n  styleUrls: ['./button-group.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush\r\n})\r\nexport class ButtonGroupComponent implements OnInit {\r\n\r\n  @Input()\r\n  public buttons: Button[] = [];\r\n\r\n  @Output()\r\n  public selectedButton = new EventEmitter<Button>();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".Container {\n  display: inline-flex;\n  flex-wrap: wrap;\n  border: 1px solid #c0c0c0;\n  border-right: none;\n  border-radius: 10px;\n\n  div {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 10px;\n    border-right: 1px solid #c0c0c0;\n    flex-grow: 1;\n\n    &:first-of-type {\n      border-top-left-radius: 10px;\n      border-bottom-left-radius: 10px;\n    }\n\n    &:last-of-type {\n      border-top-right-radius: 10px;\n      border-bottom-right-radius: 10px;\n    }\n\n    &:hover {\n      background-color: lightskyblue;\n      cursor: pointer;\n    }\n  }\n}\n",
+                    "data": ".Container {\r\n  display: inline-flex;\r\n  flex-wrap: wrap;\r\n  border: 1px solid #c0c0c0;\r\n  border-right: none;\r\n  border-radius: 10px;\r\n\r\n  div {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    padding: 10px;\r\n    border-right: 1px solid #c0c0c0;\r\n    flex-grow: 1;\r\n\r\n    &:first-of-type {\r\n      border-top-left-radius: 10px;\r\n      border-bottom-left-radius: 10px;\r\n    }\r\n\r\n    &:last-of-type {\r\n      border-top-right-radius: 10px;\r\n      border-bottom-right-radius: 10px;\r\n    }\r\n\r\n    &:hover {\r\n      background-color: lightskyblue;\r\n      cursor: pointer;\r\n    }\r\n  }\r\n}\r\n",
                     "styleUrl": "./button-group.component.scss"
                 }
             ],
@@ -192,11 +192,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"Container\">\n  <div *ngFor=\"let button of buttons\"\n       (click)=\"selectedButton.emit(button)\">\n    {{button.text}}\n  </div>\n</div>\n"
+            "templateData": "<div class=\"Container\">\r\n  <div *ngFor=\"let button of buttons\"\r\n       (click)=\"selectedButton.emit(button)\">\r\n    {{button.text}}\r\n  </div>\r\n</div>\r\n"
         },
         {
             "name": "CoreComponentsComponent",
-            "id": "component-CoreComponentsComponent-0890f636e73314367c4da7af736818b205caab06c705dfb2595f6904b190b5d7fafdd43c3ff0763dd40f7f7569e55b0d92702d145a03f4f5317844d5f3bacb67",
+            "id": "component-CoreComponentsComponent-4de49397666df70263e497a910945dd9c16ca4fe3f9fd2b77ff47c5592bbc84631e1e379dd70c88dfc7684fbfaec42ec2f6c3b95352074a2f259ff8e6e89d41b",
             "file": "projects/core-components/src/lib/core-components.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -231,7 +231,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-core-components',\n  template: `\n    <p>\n      Best component ever!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class CoreComponentsComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-core-components',\r\n  template: `\r\n    <p>\r\n      Best component ever!\r\n    </p>\r\n  `,\r\n  styles: [\r\n  ]\r\n})\r\nexport class CoreComponentsComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -249,7 +249,7 @@
         },
         {
             "name": "DatepickerComponent",
-            "id": "component-DatepickerComponent-58498ff4624b579221429a88cb71abc70879ebe39f7ecc19b1fbf2600c87ee88243cd080cc99a0b1667c452d683bc078236e0cf1cfaee21bb1b578e64f3f8674",
+            "id": "component-DatepickerComponent-e1fa4e9c4c0fefcd640a76fd1cad33b8a4dc5d72b6c59781dd523236ffaf4b9f875ba88615a358b8d1ffc50d114d8e4702e6b9c009ad888b5ea7443d0b71fc76",
             "file": "projects/core-components/src/lib/datepicker/datepicker.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [],
@@ -356,11 +356,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'lib-datepicker',\n  templateUrl: './datepicker.component.html',\n  styleUrls: ['./datepicker.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class DatepickerComponent implements OnInit {\n\n  @Input()\n  public dateValue = new Date();\n\n  @Input()\n  public disabled = false;\n\n  @Input()\n  public disabledDates = (date: Date) => false;\n\n  @Output()\n  public dateChanged = new EventEmitter<Date>();\n\n  public onValueChange(date: Date): void {\n    this.dateChanged.emit(date);\n  }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-datepicker',\r\n  templateUrl: './datepicker.component.html',\r\n  styleUrls: ['./datepicker.component.scss'],\r\n  changeDetection: ChangeDetectionStrategy.OnPush\r\n})\r\nexport class DatepickerComponent implements OnInit {\r\n\r\n  @Input()\r\n  public dateValue = new Date();\r\n\r\n  @Input()\r\n  public disabled = false;\r\n\r\n  @Input()\r\n  public disabledDates = (date: Date) => false;\r\n\r\n  @Output()\r\n  public dateChanged = new EventEmitter<Date>();\r\n\r\n  public onValueChange(date: Date): void {\r\n    this.dateChanged.emit(date);\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "kendo-datepicker {\n  border: var(--border-standard);\n}\n\n::ng-deep .k-button-solid-base {\n  background-color: cyan;\n}\n",
+                    "data": "kendo-datepicker {\r\n  border: var(--border-standard);\r\n}\r\n\r\n::ng-deep .k-button-solid-base {\r\n  background-color: cyan;\r\n}\r\n",
                     "styleUrl": "./datepicker.component.scss"
                 }
             ],
@@ -368,19 +368,19 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<kendo-datepicker [value]=\"dateValue\"\n                  [disabled]=\"disabled\"\n                  [disabledDates]=\"disabledDates\"\n                  (valueChange)=\"onValueChange($event)\">\n</kendo-datepicker>\n"
+            "templateData": "<kendo-datepicker [value]=\"dateValue\"\r\n                  [disabled]=\"disabled\"\r\n                  [disabledDates]=\"disabledDates\"\r\n                  (valueChange)=\"onValueChange($event)\">\r\n</kendo-datepicker>\r\n"
         }
     ],
     "modules": [
         {
             "name": "CoreComponentsModule",
-            "id": "module-CoreComponentsModule-45ef586c29633d6d0fdf9ba0bbd38392bbddf095373b233c1b8f25c402948fb34747f21063819c54a0f6326f7bf6b5be398ee80b860def51845e55b1558c458a",
+            "id": "module-CoreComponentsModule-cf4967d657dabca07a976681963a8e89d8354e451f84edf93338326b2473bfca199fa605ee2426516ae1d6138b9b9df6831014000d98da1479a22377c8ac10ce",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/core-components/src/lib/core-components.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CoreComponentsComponent } from './core-components.component';\nimport { DatepickerComponent } from './datepicker/datepicker.component';\nimport { DateInputsModule } from '@progress/kendo-angular-dateinputs';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\n@NgModule({\n  declarations: [\n    CoreComponentsComponent,\n    DatepickerComponent\n  ],\n  imports: [\n    BrowserAnimationsModule,\n    DateInputsModule\n  ],\n  exports: [\n    CoreComponentsComponent,\n    DatepickerComponent\n  ]\n})\nexport class CoreComponentsModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CoreComponentsComponent } from './core-components.component';\r\nimport { DatepickerComponent } from './datepicker/datepicker.component';\r\nimport { DateInputsModule } from '@progress/kendo-angular-dateinputs';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    CoreComponentsComponent,\r\n    DatepickerComponent\r\n  ],\r\n  imports: [\r\n    BrowserAnimationsModule,\r\n    DateInputsModule\r\n  ],\r\n  exports: [\r\n    CoreComponentsComponent,\r\n    DatepickerComponent\r\n  ]\r\n})\r\nexport class CoreComponentsModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -492,7 +492,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "(args) => ({\n  props: args\n})"
+                "defaultValue": "(args) => ({\r\n  props: args\r\n})"
             },
             {
                 "name": "Template",
@@ -502,7 +502,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "(args) => ({\n  props: args\n})"
+                "defaultValue": "(args) => ({\r\n  props: args\r\n})"
             },
             {
                 "name": "ThirdStory",
@@ -609,7 +609,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "(args) => ({\n  props: args\n})"
+                    "defaultValue": "(args) => ({\r\n  props: args\r\n})"
                 },
                 {
                     "name": "ThirdStory",
@@ -651,7 +651,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "(args) => ({\n  props: args\n})"
+                    "defaultValue": "(args) => ({\r\n  props: args\r\n})"
                 },
                 {
                     "name": "ThirdStory",

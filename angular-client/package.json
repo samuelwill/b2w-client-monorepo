@@ -23,8 +23,14 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@progress/kendo-angular-l10n": "^4.0.0",
     "@progress/kendo-angular-dateinputs": "^7.0.1",
-    "@progress/kendo-theme-default": "^5.5.0"
+    "@progress/kendo-angular-common": "^3.1.0",
+    "@progress/kendo-theme-default": "^5.5.0",
+    "@progress/kendo-angular-intl": "^4.0.1",
+    "@progress/kendo-angular-popup": "^5.0.0",
+    "@progress/kendo-licensing": "^1.2.2",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.8",
